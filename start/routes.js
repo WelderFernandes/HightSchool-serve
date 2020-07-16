@@ -17,3 +17,7 @@
 const Route = use('Route')
 
 Route.post('/session', 'SessionController.store')
+
+Route.post('/forgotpassword', 'ForgotPasswordController.store')
+Route.post('/reset', 'ResetpasswordController.store')
+
