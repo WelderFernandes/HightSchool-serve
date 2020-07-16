@@ -14,7 +14,7 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route');
 
-Route.post('/session', 'SessionController.store');
+Route.post('/session', 'SessionController.store').validator('Session');
 
-Route.post('/forgotpassword', 'ForgotPasswordController.store');
-Route.post('/reset', 'ResetpasswordController.store');
+Route.post('/forgotpassword', 'ForgotPasswordController.store').validator('Forgot');
+Route.post('/reset', 'ResetpasswordController.store').validator('Reset');
