@@ -1,5 +1,3 @@
-'use strict'
-
 /*
 |--------------------------------------------------------------------------
 | Routes
@@ -14,10 +12,9 @@
 */
 
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
-const Route = use('Route')
+const Route = use('Route');
 
-Route.post('/session', 'SessionController.store')
+Route.post('/session', 'SessionController.store');
 
-Route.post('/forgotpassword', 'ForgotPasswordController.store')
-Route.post('/reset', 'ResetpasswordController.store')
-
+Route.post('/forgotpassword', 'ForgotPasswordController.store');
+Route.post('/reset', 'ResetpasswordController.store');
